@@ -3,8 +3,8 @@ import java.util.Scanner;
 public class BAtransacManager {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int accountCount = readIntInRange(input, "
-        Number of accounts (1-5): ", 1, 5);
+        int accountCount = readIntInRange(input,
+        "Number of accounts (1-5): ", 1, 5);
         BankAccount[] accounts = new BankAccount[accountCount];
 
         for (int i = 0; i < accounts.length; i++) {
@@ -104,5 +104,3 @@ class BankAccount {
     }
     public static int getAccountCount() { return accountCount; }
 }
-
-
